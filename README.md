@@ -1,6 +1,6 @@
 # Leaf-Feature-Extraction
 ### Project: 
-Leaf Image Feature Extraction
+Visual and Geometric Feature Extraction from Leaf Images Using Contour and Morphological Analysis
 
-### Overview
-To analyze the shape and structural features of a leaf image using computer vision techniques. This includes contour extraction, feature detection, coordinate transformation, and morphological operations for potential use in classification or shape analysis.
+### Abstraction
+In our work, to facilitate shape-based analysis and classification tasks, we describe a comprehensive image processing pipeline for visual and geometric feature extraction from leaf images. For extracting and visualizing critical features that define leaf structure and form, we use a combination of contour detection, polar coordinate transformation, and morphological operations. To achieve translation invariance, we start the process with contour extraction to isolate the leaf boundary, followed by center-of-mass alignment. We effectively detect local extrema, which correspond to biological features like lobes and sinuses, by converting the boundary coordinates from Cartesian to polar space. To find important places of interest on the leaf surface, feature detection methods like CENSURE and Harris corner detection are used. We also use morphological procedures, such as dilatation, opening, closure, and erosion, to eliminate noise and examine structural differences. Binary morphology and distance transforms work together to improve the depiction of internal leaf thickness and characteristics. This pipeline offers a strong framework for automated plant identification and phenotypic characteristic extraction, laying the groundwork for additional analysis such as machine learning-based categorization and form similarity assessments.
